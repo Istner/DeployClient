@@ -15,6 +15,6 @@ sudo apt update; sudo apt install python3 gphoto2 -y
 # git config user.signingKey Estofen\!12
 # git config user.email frafolcm@gmail.com
 
-git clone https://github.com/Fran-FC/istner-client $HOME
+git clone https://github.com/Fran-FC/istner-client "$HOME/istner-client"
 
 mv $CONFIG_FILE $CONFIG_FOLDER
