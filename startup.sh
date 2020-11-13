@@ -11,9 +11,9 @@ echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"ipServer\": \"localhost\",
 sudo apt update; sudo apt install python3 gphoto2 -y
 
 # Cambiar a un repositorio de la empresa
-git config user.name Fran-FC
-git config user.signingKey Estofen\!12
-git config user.email frafolcm@gmail.com
+# git config user.name Fran-FC
+# git config user.signingKey Estofen\!12
+# git config user.email frafolcm@gmail.com
 
 git clone https://github.com/Fran-FC/istner-client $HOME
 
