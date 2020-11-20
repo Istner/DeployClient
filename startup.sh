@@ -5,7 +5,8 @@ CONFIG_FILE="$HOME/config.json"
 touch $CONFIG_FILE
 read -p "Nombre de usuario para el cliente web: " uname
 read -sp "Contraseña: " upass
-echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"ipServer\": \"localhost\", \"portServer\": \"8000\"}" > $CONFIG_FILE
+read -p "Url de la pagina web de Istner360: " url
+echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"ipServer\": \"$url\", \"portServer\": \"8000\"}" > $CONFIG_FILE
 
 # Cambiar a un repositorio de la empresa
 git clone https://github.com/Fran-FC/istner-client "$HOME/istner-client"
@@ -14,3 +15,6 @@ git clone https://github.com/Fran-FC/istner-client "$HOME/istner-client"
 sudo apt update; sudo apt install python3 gphoto2 -y; sudo apt upgrade -y; sudo apt autoremove -y
 
 mv $CONFIG_FILE $CONFIG_FOLDER
+
+gphoto2 --set-config capturetarget=1
+
