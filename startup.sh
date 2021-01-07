@@ -5,6 +5,7 @@ CONFIG_FILE="$HOME/config.json"
 touch $CONFIG_FILE
 read -p "Nombre de usuario para el cliente web: " uname
 read -sp "Contraseña: " upass
+echo
 read -p "Url de la pagina web de Istner360 (formato-> ip:puerto): " url
 echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"dirServer\": \"$url\"}" > $CONFIG_FILE
 
