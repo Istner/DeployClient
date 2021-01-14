@@ -13,7 +13,7 @@ echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"dirServer\": \"$url\"}" > 
 git clone https://github.com/Fran-FC/istner-client "$HOME/istner-client"
 
 # Resolve software dependencies 
-sudo apt update; sudo apt install python3 gphoto2 python3-sh -y
+sudo apt update; sudo apt install python3 gphoto2 python3-sh arp-scan -y
 # sudo apt upgrade -y; sudo apt autoremove -y
 
 mv $CONFIG_FILE $CONFIG_FOLDER
