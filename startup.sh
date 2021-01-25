@@ -16,6 +16,7 @@ git clone https://github.com/Fran-FC/istner-client "$HOME/istner-client"
 sudo apt update
 sudo apt install gphoto2 arp-scan python3-pip -y
 # sudo apt upgrade -y; sudo apt autoremove -y
+pip3 install sh
 
 mv $CONFIG_FILE $CONFIG_FOLDER
 
