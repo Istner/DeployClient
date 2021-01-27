@@ -10,7 +10,7 @@ read -p "Url de la pagina web de Istner360 (formato-> ip:puerto): " url
 echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"dirServer\": \"$url\"}" > $CONFIG_FILE
 
 # Cambiar a un repositorio de la empresa
-git clone https://github.com/Istner/RaspberryClient "$HOME/istner-client"
+git clone https://github.com/Istner/RaspberryClient "$HOME/RaspberryClient"
 
 # Resolve software dependencies 
 sudo apt update
