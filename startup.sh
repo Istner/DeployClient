@@ -1,5 +1,5 @@
 #!/bin/bash
-CONFIG_FOLDER="$HOME/istner-client/config/"
+CONFIG_FOLDER="$HOME/RaspberryClient/config/"
 CONFIG_FILE="$HOME/config.json"
 # Write into config.json the authentication parameters and server information
 touch $CONFIG_FILE
@@ -10,7 +10,7 @@ read -p "Url de la pagina web de Istner360 (formato-> ip:puerto): " url
 echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"dirServer\": \"$url\"}" > $CONFIG_FILE
 
 # Cambiar a un repositorio de la empresa
-git clone https://github.com/Fran-FC/istner-client "$HOME/istner-client"
+git clone https://github.com/Istner/RaspberryClient "$HOME/istner-client"
 
 # Resolve software dependencies 
 sudo apt update
