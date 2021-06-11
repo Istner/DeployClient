@@ -13,10 +13,9 @@ echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"dirServer\": \"$url\"}" > 
 git clone https://github.com/Istner/RaspberryClient "$HOME/RaspberryClient"
 
 # Resolve software dependencies 
-sudo apt update
-sudo apt install gphoto2 arp-scan python3-pip -y
+sudo apt install gphoto2 arp-scan python3-pip libgphoto2-dev -y
 # sudo apt upgrade -y; sudo apt autoremove -y
-pip3 install sh
+pip3 install sh gphoto2
 
 mv $CONFIG_FILE $CONFIG_FOLDER
 
