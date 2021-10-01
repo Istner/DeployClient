@@ -10,7 +10,8 @@ read -p "Numero de pasos por vuelta: " conversion
 echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"conversion\": \"$conversion\"}" > $CONFIG_FILE
 
 # Cambiar a un repositorio de la empresa
-git clone https://github.com/Istner/RaspberryClient "$HOME/RaspberryClient"
+#git clone https://github.com/Istner/RaspberryClient "$HOME/RaspberryClient"
+git clone https://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@github.com/Istner/RaspberryClient.git
 
 # Resolve software dependencies 
 sudo apt install gphoto2 arp-scan python3-pip libgphoto2-dev -y
