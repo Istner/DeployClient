@@ -11,7 +11,7 @@ echo "{\"uName\": \"$uname\", \"uPass\": \"$upass\",\"conversion\": \"$conversio
 
 # Cambiar a un repositorio de la empresa
 #git clone https://github.com/Istner/RaspberryClient "$HOME/RaspberryClient"
-git clone https://Istner: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@github.com/Istner/RaspberryClient
+git clone https://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@github.com/Istner/RaspberryClient
 # Resolve software dependencies 
 sudo apt install gphoto2 arp-scan python3-pip libgphoto2-dev -y
 # sudo apt upgrade -y; sudo apt autoremove -y
